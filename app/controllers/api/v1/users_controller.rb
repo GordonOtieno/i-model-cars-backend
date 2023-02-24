@@ -7,15 +7,23 @@ class Api::V1::UsersController < ApplicationController
 
       if @new_user.save
         render json: "User created successfully!"
+        response.status = 201
       else
         render json: "Failed!"
+        response.status = 400
       end
     end
 
     def show
-      @user = User.find(params[:id])
-      @resp = {user_name: @user.name, user_email: @user.email}
-      render json: @resp
+      if User.exists?(params[:id])
+        @user = User.find(params[:id])
+        @resp = {user_name: @user.name, user_email: @user.email}
+        render json: @resp
+        response.status = 200
+      else
+        render json: "User not found!"
+        response.status = 204
+      end
     end
   end
   
