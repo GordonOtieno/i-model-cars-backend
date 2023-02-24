@@ -7,7 +7,7 @@ class Api::V1::UsersController < ApplicationController
 
       if @new_user.save
         render json: "User created successfully!"
-        response.status = 201
+        response.status = 200
       else
         render json: "Failed!"
         response.status = 400
