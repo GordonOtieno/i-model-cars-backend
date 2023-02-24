@@ -1,3 +1,3 @@
 class Car < ApplicationRecord
-  has_many :reservations, dependancy: :destroy
+  has_many :reservations
 end
