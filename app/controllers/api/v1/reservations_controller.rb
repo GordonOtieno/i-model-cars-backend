@@ -3,7 +3,10 @@ class Api::V1::UsersController < ApplicationController
     end
     def create
     end
-    def new
+    def show
     end
+    def destroy
+    end
+    
   end
   
