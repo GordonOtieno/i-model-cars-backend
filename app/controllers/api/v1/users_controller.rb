@@ -1,8 +1,8 @@
 class Api::V1::UsersController < ApplicationController
     def create
       @new_user = User.new(
-        name: params[:user_name],
-        email: params[:user_email],
+        name: params[:name],
+        email: params[:email],
       )
 
       if @new_user.save
@@ -18,7 +18,7 @@ class Api::V1::UsersController < ApplicationController
       p params
       if User.exists?(name: params[:user_name])
         @user = User.find_by(name: params[:user_name])
-        @resp = {user_name: @user.name, user_email: @user.email}
+        @resp = {name: @user.name, email: @user.email}
         render json: @resp
         response.status = 200
       else
