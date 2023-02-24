@@ -11,8 +11,11 @@ class Api::V1::UsersController < ApplicationController
         render json: "Failed!"
       end
     end
+
     def show
-      render json: "Checking user"
+      @user = User.find(params[:id])
+      @resp = {user_name: @user.name, user_email: @user.email}
+      render json: @resp
     end
   end
   
