@@ -15,8 +15,9 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def show
-      if User.exists?(params[:id])
-        @user = User.find(params[:id])
+      p params
+      if User.exists?(name: params[:user_name])
+        @user = User.find_by(name: params[:user_name])
         @resp = {user_name: @user.name, user_email: @user.email}
         render json: @resp
         response.status = 200
