@@ -22,7 +22,7 @@ class Api::V1::UsersController < ApplicationController
         response.status = 200
       else
         render json: "User not found!"
-        response.status = 204
+        response.status = 404
       end
     end
   end
