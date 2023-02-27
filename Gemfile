@@ -50,3 +50,5 @@ group :development do
 end
 
 gem 'rubocop', '~> 1.46'
+
+gem "rswag", "~> 2.8"
