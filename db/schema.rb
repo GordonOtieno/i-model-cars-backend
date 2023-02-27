@@ -10,41 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_22_141047) do
+ActiveRecord::Schema[7.0].define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cars", force: :cascade do |t|
-    t.string "name"
-    t.string "type"
-    t.string "make"
-    t.text "description"
-    t.string "image"
-    t.decimal "cost"
-    t.integer "speed"
-    t.string "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "reservations", force: :cascade do |t|
-    t.date "date"
-    t.string "city"
-    t.bigint "reservation_id", null: false
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["reservation_id"], name: "index_reservations_on_reservation_id"
-    t.index ["user_id"], name: "index_reservations_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "reservations", "reservations"
-  add_foreign_key "reservations", "users"
 end
