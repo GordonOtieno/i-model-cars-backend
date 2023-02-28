@@ -76,10 +76,10 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone these repositories to your desired folder:
 
-- `https://github.com/Okechukwu-muokwugwo/budget-app.git` if your're using https or git
-- `git@github.com:Okechukwu-muokwugwo/budget-app.git` if you prefer ssh and hit enter.
+- `https://github.com/GordonOtieno/i-model-cars-backend.git` and 
+- `https://github.com/GordonOtieno/i-model-cars-frontend.git` if you prefer ssh and hit enter.
 - create a directory in your preferred location (e.g in the Desktop or Document directory)
 
 ### Install
@@ -108,13 +108,25 @@ To run tests, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Okechukwu Muokwugwo**
 
 - GitHub: [@githubhandle](https://github.com/Okechukwu-muokwugwo)
 - Twitter: [@twitterhandle](https://twitter.com/excel4eva)
 - LinkedIn: [LinkedIn](LinkedIn.com/in/okeimuokwugwo)
+
+👤 **Gordon Otieno**
+
+- GitHub: [@GordonOtieno](https://github.com/GordonOtieno)
+- Twitter: [@GordonOtieno](https://twitter.com/GordonO34459259/twitterhandle)
+- LinkedIn: [GordonOtieno](https://www.linkedin.com/in/gordonotieno/)
+
+👤 **Amine**
+
+- GitHub: [@ouasamine](https://github.com/ouasamine)
+- Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
