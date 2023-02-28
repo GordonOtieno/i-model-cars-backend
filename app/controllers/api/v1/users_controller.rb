@@ -11,6 +11,9 @@ class Api::V1::UsersController < ApplicationController
     else
       render json: 'Failed!'
       response.status = 400
+      render json: 'User created successfully!', status: :ok
+    else
+      render json: 'Failed!', status: :unprocessable_entity
     end
   end
 
@@ -24,6 +27,12 @@ class Api::V1::UsersController < ApplicationController
     else
       render json: 'User not found!'
       response.status = 404
+    if User.exists?(name: params[:user_name])
+      @user = User.find_by(name: params[:user_name])
+      @resp = { id: @user.id, name: @user.name, email: @user.email }
+      render json: @resp, status: :ok
+    else
+      render json: 'User not found!', status: :not_found
     end
   end
 end
