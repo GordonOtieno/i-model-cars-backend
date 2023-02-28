@@ -9,5 +9,4 @@ class Car < ApplicationRecord
   validates :cost, presence: true
   validates :speed, presence: true
   validates :color, presence: true
-
 end
