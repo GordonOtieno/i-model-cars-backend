@@ -27,7 +27,7 @@
 
 **Ruby on Rails**
 
-> i-model-cars app helps `users` to book/make a reservation for latest model cars. It has a list of transactions associated with a category, so that you can see how much money you spent and on what. It is built on Rails using `Rubygem` as software packages system.
+> i-model-cars app helps `users` to book/make a reservation for latest model cars. It allows user to log in with `username` and `e-mail` and then reserve, add/create and delete cars. It is built on Rails API with React using `Rubygem` and `npm` as software packages system.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,6 +39,7 @@
 <summary>Backend/Frontend</summary>
   <ul>
     <li><a href="https://www.rubyonrails.org/">Rails</a></li>
+    <li><a href="https://www.react.org/">Rails</a></li>
   </ul>
 </details>
 
@@ -135,9 +136,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **[Add Debit Card]**
-- [] **[Add Notification]**
-- [] **[QR Scan]**
+- [ ] **[Payment]**
+- [ ] **[e-Wallet]**
+- [ ] **[Lifestyle]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
