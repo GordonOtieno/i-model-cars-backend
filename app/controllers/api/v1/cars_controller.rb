@@ -3,6 +3,7 @@ class Api::V1::CarsController < ApplicationController
     @cars = Car.all
     if @cars.empty?
       render json: { message: 'No cars found' }
+      response.status = 404
     else
       render json: @cars
     end
@@ -10,6 +11,10 @@ class Api::V1::CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
+    return unless @car.empty?
+
+    render json: { message: 'No cars found' }
+    response.status = 404
     render json: @car
   end
 
@@ -18,6 +23,7 @@ class Api::V1::CarsController < ApplicationController
 
     if @car.save
       render json: { message: 'Car was successfully created' }, status: :created
+      response.status = 200
     else
       render json: @car.errors, status: :unprocessable_entity
     end
