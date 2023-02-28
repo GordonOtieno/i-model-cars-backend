@@ -12,17 +12,18 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_02_27_135024) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "hstore"
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "car_type"
     t.string "make"
     t.text "description"
-    t.string "image"
+    t.hstore "images"
     t.decimal "cost"
     t.integer "speed"
-    t.string "color"
+    t.string "color", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

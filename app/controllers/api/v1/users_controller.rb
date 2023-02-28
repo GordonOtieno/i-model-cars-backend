@@ -6,9 +6,11 @@ class Api::V1::UsersController < ApplicationController
     )
 
     if @new_user.save
-      render json: 'User created successfully!', status: :ok
+      render json: 'User created successfully!'
+      response.status = 200
     else
-      render json: 'Failed!', status: :unprocessable_entity
+      render json: 'Failed!'
+      response.status = 400
     end
   end
 
