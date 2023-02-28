@@ -1,21 +1,20 @@
 class Api::V1::CarsController < ApplicationController
   def index
     @cars = Car.all
-    if @cars.empty?
-      render json: { message: 'No cars found' }
-      response.status = 404
+    if @cars.nil?
+      render json: { message: 'No cars found' }, status: 400
     else
       render json: @cars
     end
   end
 
   def show
-    @car = Car.find(params[:id])
-    return unless @car.empty?
-
-    render json: { message: 'No cars found' }
-    response.status = 404
-    render json: @car
+    @car = Car.find_by(id: params[:id])
+    if @car.nil?
+      render json: { message: 'Car with the Id does not exist' }, status: 404
+    else
+      render json: @car
+    end
   end
 
   def create
@@ -41,6 +40,7 @@ class Api::V1::CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:name, :car_type, :make, :description, :image, :cost, :speed, :color)
+    params.require(:car).permit(:name, :car_type, :make, :description, :cost, :speed,
+                                { images: {}, color: [] })
   end
 end
