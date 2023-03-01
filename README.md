@@ -47,7 +47,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] **Models**
+- [ ] **Car Models**
 - [ ] **Reservations**
 - [ ] **API**
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Link](https://expenditor.herokuapp.com/)
+- [Live Link](https://i-model-cars.onrender.com/api/v1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
