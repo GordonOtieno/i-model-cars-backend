@@ -54,4 +54,4 @@ gem 'rubocop', '~> 1.46'
 
 gem 'rswag', '~> 2.8'
 
-gem "rack-cors", "~> 2.0"
+gem 'rack-cors', '~> 2.0'
