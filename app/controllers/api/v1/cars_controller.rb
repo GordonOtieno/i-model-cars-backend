@@ -22,7 +22,6 @@ class Api::V1::CarsController < ApplicationController
 
     if @car.save
       render json: { message: 'Car was successfully created' }, status: :created
-      response.status = 200
     else
       render json: @car.errors, status: :unprocessable_entity
     end
