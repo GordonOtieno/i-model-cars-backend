@@ -2,11 +2,9 @@ class Car < ApplicationRecord
   has_many :reservations, dependent: :destroy
 
   validates :name, presence: true
-  validates :car_type, presence: true
   validates :make, presence: true
   validates :description, presence: true
-  validates :images, presence: true
-  validates :cost, presence: true
-  validates :speed, presence: true
-  validates :color, presence: true
+  validates :cost, presence: true, numericality: { greater_than: 0 }
+  validates :speed, presence: true, numericality: { greater_than: 0 }
+  # validates :color, presence: true
 end
