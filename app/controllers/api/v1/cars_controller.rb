@@ -1,7 +1,7 @@
 class Api::V1::CarsController < ApplicationController
   def index
     @cars = Car.all
-      render json: @cars
+    render json: @cars
   end
 
   def show
@@ -35,6 +35,6 @@ class Api::V1::CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:name, :make, :description, :cost, :speed,:car_type, images:{} ,color:[] )
+    params.require(:car).permit(:name, :make, :description, :cost, :speed, :car_type, images: {}, color: [])
   end
 end

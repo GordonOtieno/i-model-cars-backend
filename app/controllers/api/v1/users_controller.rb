@@ -6,7 +6,7 @@ class Api::V1::UsersController < ApplicationController
     )
 
     if @new_user.save
-      @resp = { id:  @new_user.id, name:  @new_user.name, email:  @new_user.email }
+      @resp = { id: @new_user.id, name: @new_user.name, email: @new_user.email }
       render json: @resp
       response.status = 200
     else
