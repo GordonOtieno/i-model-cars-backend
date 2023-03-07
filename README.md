@@ -14,8 +14,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Author](#author)
-- [🔭 Future Features](#future-features)
+- [👥 Author](#author)ru
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -59,6 +58,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Link](https://i-model-cars.onrender.com/api/v1)
+- [Link to frontend repo.](https://github.com/GordonOtieno/i-model-cars-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,15 +132,6 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Payment]**
-- [ ] **[e-Wallet]**
-- [ ] **[Lifestyle]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
