@@ -46,9 +46,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] **Car Models**
-- [ ] **Reservations**
-- [ ] **API**
+- **Car Models**
+- **Reservations**
+- **API**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -83,6 +83,14 @@ Clone these repositories to your desired folder:
 - `https://github.com/GordonOtieno/i-model-cars-frontend.git` if you prefer ssh and hit enter.
 - create a directory in your preferred location (e.g in the Desktop or Document directory)
 
+  ### Setup Database
+
+  To setup database locally run the following command:
+
+  - `rails db:create` to create database locally.
+  - `rails db:migrate` to create migration files.
+  - `rails db:seed` to add initial data to db.
+
 ### Install
 
 Install this project with:
@@ -90,6 +98,7 @@ Install this project with:
 - Install Ruby on Rails framework.
 - Use RubyGems as a software package system.
 - Dependencies _(a packet manager is required)_: then you run the command `bundle install` in the terminal
+
 
 ### Usage
 
@@ -156,9 +165,8 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments & Attribution <a name="acknowledgements"></a>
 
 - I would like to thank *Gregoire Vella on Behance*
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to anyone whose code was used.
+- Inspiration, etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,6 +174,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
