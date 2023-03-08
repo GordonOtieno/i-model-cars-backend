@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Car.create(name: 'Toyota', 
+car_type: '4-wheel derive', 
+make:'HINO',
+description: "Toyota Motor Corp., Largest Japanese automobile manufacturer and one of the largest automotive companies in the world. It was established in 1933 as a division of the Toyoda Automatic Loom Works, Ltd., and in",
+images: { White: 'https://cdn.pixabay.com/photo/2013/07/13/11/50/car-158795_960_720.png',
+dark: 'https://cdn.pixabay.com/photo/2012/04/12/23/47/car-30984__340.png'}, 
+cost: 100.00,
+speed:  70,
+color: ['White', 'dark', 'red'],
+)
