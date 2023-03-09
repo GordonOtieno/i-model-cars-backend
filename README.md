@@ -32,8 +32,12 @@
 
 > `Ruby 3.1.3` > `postgresql` > `Rails 7` > `React`
 
-### Tech Stack <a name="tech-stack"></a>
+### Kanban board
+![Kanban board](./kanban.jpg)
+[Link to kanban board](https://github.com/GordonOtieno/i-model-cars-backend/projects/1#column-19368376)
+> Team members: 3
 
+### Tech Stack <a name="tech-stack"></a>
 <details>
 <summary>Backend/Frontend</summary>
   <ul>
