@@ -63,6 +63,7 @@
 
 - [Live Link](https://i-model-cars.onrender.com/api/v1)
 - [Link to frontend repo.](https://github.com/GordonOtieno/i-model-cars-frontend)
+- [Link to API documentation](https://i-model-cars.onrender.com/api-docs/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
